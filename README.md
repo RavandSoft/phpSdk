@@ -14,6 +14,7 @@ composer require aqayepardakht/php-sdk
 
 ```php
 require 'vendor/autoload.php';
+
 $api = new Aqayepardakht\PhpSdk\Api([
      'pin'     => 'Your Pin',
 ]);
