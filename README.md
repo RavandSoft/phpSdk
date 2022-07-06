@@ -41,7 +41,7 @@ $traceCode      = $_POST['transid']; // کد رهگیری برای تایید ت
 $api            = new Aqayepardakht\PhpSdk\Api();
 
 try {
-    $pay = $api->gateway('sandbox')
+    $pay = $api->gateway('Your Pin')
                 ->invoice(['amount' => 1100])
                 ->verify($traceCode);
 } catch (Exception $e) { 
