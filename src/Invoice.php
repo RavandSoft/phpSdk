@@ -34,8 +34,8 @@ class Invoice {
     public function amount($amount) {
         $amount = floatval(Helper::faToEnNumbers($amount));
 
-        if ($amount == 0 || $amount < 500 || $amount >= 50000) {
-            throw new \Exception('مبلغ باید به صورت عددی و بیشتر از 500 تومان و کمتر از  50,000 باشد');
+        if ($amount == 0 || $amount < 500 || $amount >= 100000000) {
+            throw new \Exception('مبلغ باید به صورت عددی و بیشتر از 500 تومان و کمتر از  1000,000,000 باشد');
         }
 
         $this->amount = $amount;
